@@ -1,0 +1,310 @@
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+  html{
+    height: 100%;
+  }
+
+.logo {
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    color: #707070;
+    text-align: center;
+    transform: translate(0%, 0%);
+    transition: 0.5s;
+}
+
+.logo li {
+    list-style: none;
+    color: #707070;
+}
+.logo li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #B5DFCE;
+    float: left;
+    margin-right: 60px;
+}
+.logo li {
+    color: #B5DFCE;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.logo li:hover:nth-child(1) {
+    border: 5px solid #B5DFCE;
+    box-shadow: 0 0 15px #B5DFCE;
+    transition: all 0.5s ease;
+}
+.logo li:hover {
+    color: #B5DFCE;
+    text-shadow: 0 0 15px #B5DFCE;;
+    transition: all 0.5s ease;
+}
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container1 {
+    display: inline;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    text-align: right;
+    transform: translate(0%, 0%);
+    transition: 0.5s;
+  }
+  
+  header {  
+  display: inline-block;
+  justify-content: space-between;
+  height: auto;
+  text-align: left;
+  color: grey;
+  }
+   
+  nav {
+    margin-left: 870px;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: grey;
+    }
+  nav a {
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  a {
+    color: grey
+  }
+
+  nav a:hover {
+    border-bottom: 1px solid #707070;
+    
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background-color: #B5DFCE;
+  color: #707070;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transform: translate(0%, 0%);
+  transition: 0.5s;
+}
+.btn:hover {
+    background-color: #B5DFCE;
+    border-bottom: none;
+    box-shadow: 0 0 15px #B5DFCE;
+    color: #707070;
+    text-shadow: 0 0 15px #B5DFCE;;
+    transition: all 0.5s ease;
+}
+  
+ 
+h1 {
+    text-align: center;
+    color: #707070;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+p {
+    text-align: center;
+}
+.link {
+    text-align: center;
+   color:#707070;
+   font-size: 25px;
+}
+img {
+    width: 1375px;
+    height: auto;
+}
+.link {
+    text-align: center;
+   color:#707070;
+   font-size: 25px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#B5DFCE;; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  #topFunction {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#B5DFCE;; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topFunction:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  footer {
+    background-color: #EFEDED;   
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 50px; 
+    
+    }
+  
+footer a {
+    text-decoration: none;
+    display: inline;
+    color: #707070;
+    margin: 50px;
+    font-size: 16px;
+  }
+
+footer {
+    background: #EFEDED;
+}
+.footer {
+    padding: 50px;
+    position: relative;
+    margin-left: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer div {
+    list-style: none;
+}
+.footer div a {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #707070;
+    float: left;
+    margin-right: 60px;
+}
+.footer div a .fa {
+    color: #707070;
+    margin-top: 20px;
+}
+.footer div a:hover:nth-child(1) {
+    border: 5px solid #FCC863;
+    box-shadow: 0 0 15px #FCC863;
+    transition: all 0.5s ease;
+}
+.footer div a:hover .fa-linkedin {
+    color: #FCC863;
+    text-shadow: 0 0 15px #FCC863;
+    transition: all 0.5s ease;
+}
+
+.footer div a:hover:nth-child(2) {
+    border: 5px solid #B5DFCE;
+    box-shadow: 0 0 15px #B5DFCE;
+    transition: all 0.5s ease;
+}
+.footer div a:hover .fa-envelope {
+    color: #B5DFCE;
+    text-shadow: 0 0 15px #B5DFCE;
+    transition: all 0.5s ease;
+}
+
+.footer div a:hover:nth-child(3) {
+    border: 5px solid #C35537;
+    box-shadow: 0 0 15px #C35537;
+    transition: all 0.5s ease;
+}
+.footer div a:hover .fa-github {
+    color: #C35537;
+    text-shadow: 0 0 15px #C35537;
+    transition: all 0.5s ease;
+}
